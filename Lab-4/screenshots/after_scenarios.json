@@ -1,0 +1,114 @@
+[
+  {
+    "file": "after_01_gameplay.png",
+    "scenario": "Seeded starting scene with three incoming missiles.",
+    "score": 0,
+    "wave": 1,
+    "ammo": [
+      10,
+      10,
+      10
+    ],
+    "interceptors": 0,
+    "cities_alive": 6,
+    "state": "play"
+  },
+  {
+    "file": "after_02_battery_fallback.png",
+    "scenario": "Ten real launches exhaust the left battery; after they settle, click (70,180) again. Fixed: middle battery fires and its ammo falls to nine.",
+    "score": 0,
+    "wave": 1,
+    "ammo": [
+      0,
+      9,
+      10
+    ],
+    "interceptors": 1,
+    "cities_alive": 6,
+    "state": "play"
+  },
+  {
+    "file": "after_03_explosion_colors.png",
+    "scenario": "Four real Explosion objects at lifetime progress 0.12, 0.38, 0.62 and 0.85.",
+    "score": 0,
+    "wave": 1,
+    "ammo": [
+      10,
+      10,
+      10
+    ],
+    "interceptors": 0,
+    "cities_alive": 6,
+    "state": "play"
+  },
+  {
+    "file": "after_04_city_warning.png",
+    "scenario": "Four city impacts trigger the critical two-city warning.",
+    "score": 0,
+    "wave": 1,
+    "ammo": [
+      10,
+      10,
+      10
+    ],
+    "interceptors": 0,
+    "cities_alive": 2,
+    "state": "play"
+  },
+  {
+    "file": "after_05_before_repair.png",
+    "scenario": "One destroyed city; score set to 1975 for the threshold scenario.",
+    "score": 1975,
+    "wave": 1,
+    "ammo": [
+      10,
+      10,
+      10
+    ],
+    "interceptors": 0,
+    "cities_alive": 5,
+    "state": "play"
+  },
+  {
+    "file": "after_06_city_repaired.png",
+    "scenario": "A collision earns 25 points, crosses 2000 and rebuilds the city.",
+    "score": 2000,
+    "wave": 1,
+    "ammo": [
+      10,
+      10,
+      10
+    ],
+    "interceptors": 0,
+    "cities_alive": 6,
+    "state": "play"
+  },
+  {
+    "file": "after_07_game_over.png",
+    "scenario": "Impacts destroy all six cities and end the game.",
+    "score": 0,
+    "wave": 1,
+    "ammo": [
+      10,
+      10,
+      10
+    ],
+    "interceptors": 0,
+    "cities_alive": 0,
+    "state": "lose"
+  },
+  {
+    "file": "after_08_reset.png",
+    "scenario": "Reset restores six cities, full ammunition, score zero and wave one.",
+    "score": 0,
+    "wave": 1,
+    "ammo": [
+      10,
+      10,
+      10
+    ],
+    "interceptors": 0,
+    "cities_alive": 6,
+    "state": "play"
+  }
+]

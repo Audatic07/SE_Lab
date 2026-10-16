@@ -1,0 +1,40 @@
+SRN: PES2UG24CS036
+Date: 2026-10-16T09:26:55.446476+05:30
+Python: 3.13.15
+Pygame: 2.6.1
+Command: python -m unittest discover -s Lab-4/tests -v
+SDL: dummy video/audio drivers
+
+test_all_empty_or_dead_is_safe (test_game.GameTests.test_all_empty_or_dead_is_safe) ... ok
+test_battery_impact_does_not_call_city_hook (test_game.GameTests.test_battery_impact_does_not_call_city_hook) ... ok
+test_blast_boundary_counts_as_collision (test_game.GameTests.test_blast_boundary_counts_as_collision) ... ok
+test_cannot_launch_at_ground_or_after_loss (test_game.GameTests.test_cannot_launch_at_ground_or_after_loss) ... ok
+test_city_alert_expires (test_game.GameTests.test_city_alert_expires) ... ok
+test_city_destruction_calls_hook_once (test_game.GameTests.test_city_destruction_calls_hook_once) ... ok
+test_closest_available_battery (test_game.GameTests.test_closest_available_battery) ... ok
+test_collision_scores_once_in_overlapping_blasts (test_game.GameTests.test_collision_scores_once_in_overlapping_blasts) ... ok
+test_destroyed_battery_falls_back (test_game.GameTests.test_destroyed_battery_falls_back) ... ok
+test_detonation_explosion_is_at_target (test_game.GameTests.test_detonation_explosion_is_at_target) ... ok
+test_empty_battery_falls_back_and_debits_ammo (test_game.GameTests.test_empty_battery_falls_back_and_debits_ammo) ... ok
+test_expired_blast_cannot_score (test_game.GameTests.test_expired_blast_cannot_score) ... ok
+test_explosion_colors_are_valid_and_clamped (test_game.GameTests.test_explosion_colors_are_valid_and_clamped) ... ok
+test_interceptor_snaps_to_exact_target_without_early_detonation (test_game.GameTests.test_interceptor_snaps_to_exact_target_without_early_detonation) ... ok
+test_loss_and_reset (test_game.GameTests.test_loss_and_reset) ... ok
+test_mixed_unavailable_batteries (test_game.GameTests.test_mixed_unavailable_batteries) ... ok
+test_no_destroyed_city_does_not_bank_repair (test_game.GameTests.test_no_destroyed_city_does_not_bank_repair) ... ok
+test_real_main_loop_handles_click_reset_and_quit (test_game.GameTests.test_real_main_loop_handles_click_reset_and_quit) ... ok
+test_repair_can_be_disabled (test_game.GameTests.test_repair_can_be_disabled) ... ok
+test_repair_threshold_and_once_per_milestone (test_game.GameTests.test_repair_threshold_and_once_per_milestone) ... ok
+test_score_jump_awards_each_crossed_milestone (test_game.GameTests.test_score_jump_awards_each_crossed_milestone) ... ok
+test_spawn_avoids_destroyed_targets (test_game.GameTests.test_spawn_avoids_destroyed_targets) ... ok
+test_unintercepted_missile_destroys_target (test_game.GameTests.test_unintercepted_missile_destroys_target) ... ok
+test_wave_bonus_and_replenishment (test_game.GameTests.test_wave_bonus_and_replenishment) ... ok
+test_wave_waits_for_flying_interceptor (test_game.GameTests.test_wave_waits_for_flying_interceptor) ... ok
+test_zero_distance_interceptor_is_safe (test_game.GameTests.test_zero_distance_interceptor_is_safe) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.172s
+
+OK
+
+Exit code: 0

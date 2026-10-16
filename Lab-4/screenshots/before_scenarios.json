@@ -1,0 +1,30 @@
+[
+  {
+    "file": "before_01_gameplay.png",
+    "scenario": "Seeded starting scene with three incoming missiles.",
+    "score": 0,
+    "wave": 1,
+    "ammo": [
+      10,
+      10,
+      10
+    ],
+    "interceptors": 0,
+    "cities_alive": 6,
+    "state": "play"
+  },
+  {
+    "file": "before_02_battery_fallback.png",
+    "scenario": "Ten real launches exhaust the left battery; after they settle, click (70,180) again. Original: no interceptor despite other batteries having ammo.",
+    "score": 0,
+    "wave": 1,
+    "ammo": [
+      0,
+      10,
+      10
+    ],
+    "interceptors": 0,
+    "cities_alive": 6,
+    "state": "play"
+  }
+]
