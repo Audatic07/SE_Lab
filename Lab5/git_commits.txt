@@ -1,0 +1,17 @@
+Repository: https://github.com/Audatic07/SE_Lab
+Submission: https://github.com/Audatic07/SE_Lab/tree/main/Lab5
+
+Pylint
+Commit: a664f984e013186215fa573ac98edb47edb5b9bb
+Message: fix: resolve Pylint quality and maintainability findings
+Link: https://github.com/Audatic07/SE_Lab/commit/a664f984e013186215fa573ac98edb47edb5b9bb
+
+Bandit
+Commit: f707b50073e24aced05f7b69c7f262ae45285f29
+Message: fix: resolve all Bandit security findings
+Link: https://github.com/Audatic07/SE_Lab/commit/f707b50073e24aced05f7b69c7f262ae45285f29
+
+Flake8
+Commit: b5ffe163ca09f8d20e6d47563af7c75c766eb3a9
+Message: fix: resolve Flake8 formatting and document verified results
+Link: https://github.com/Audatic07/SE_Lab/commit/b5ffe163ca09f8d20e6d47563af7c75c766eb3a9
