@@ -1,0 +1,4 @@
+*.pdf binary
+*.png binary
+# Preserve whitespace in genuine captured stdout and the corresponding HTML views.
+evidence/** -whitespace

@@ -1,0 +1,203 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.15, pytest-9.2.0, pluggy-1.7.0 -- /tmp/PES2UG24CS036_lab7_env/bin/python
+cachedir: .pytest_cache
+hypothesis profile 'default'
+rootdir: /home/adityashrivastav/SE_Lab/Lab-7
+configfile: pytest.ini
+plugins: hypothesis-6.170.15
+collecting ... collected 72 items
+
+test_spam_scoring.py::test_sender_domain_no_crash PASSED                 [  1%]
+test_spam_scoring.py::test_first_link_no_crash PASSED                    [  2%]
+test_spam_scoring.py::test_shout_ratio_no_crash PASSED                   [  4%]
+test_spam_scoring.py::test_sender_domain_text_no_crash PASSED            [  5%]
+test_spam_scoring.py::test_first_link_text_no_crash PASSED               [  6%]
+test_spam_scoring.py::test_shout_ratio_text_no_crash PASSED              [  8%]
+test_spam_scoring.py::test_sender_domain_regressions[offers@Deals.com-deals.com] PASSED [  9%]
+test_spam_scoring.py::test_sender_domain_regressions[  a@EXAMPLE.COM  -example.com] PASSED [ 11%]
+test_spam_scoring.py::test_sender_domain_regressions[first.last+tag@sub.Example.com-sub.example.com] PASSED [ 12%]
+test_spam_scoring.py::test_sender_domain_regressions[a@b\xfccher.de-b\xfccher.de] PASSED [ 13%]
+test_spam_scoring.py::test_sender_domain_regressions[-] PASSED           [ 15%]
+test_spam_scoring.py::test_sender_domain_regressions[plain-text-] PASSED [ 16%]
+test_spam_scoring.py::test_sender_domain_regressions[@example.com-] PASSED [ 18%]
+test_spam_scoring.py::test_sender_domain_regressions[a@-] PASSED         [ 19%]
+test_spam_scoring.py::test_sender_domain_regressions[a@@example.com-] PASSED [ 20%]
+test_spam_scoring.py::test_sender_domain_regressions[a@b@c-] PASSED      [ 22%]
+test_spam_scoring.py::test_sender_domain_regressions[a b@example.com-] PASSED [ 23%]
+test_spam_scoring.py::test_sender_domain_regressions[a@example.com/path-] PASSED [ 25%]
+test_spam_scoring.py::test_sender_domain_regressions[a@.com-] PASSED     [ 26%]
+test_spam_scoring.py::test_sender_domain_regressions[a@bad..com-] PASSED [ 27%]
+test_spam_scoring.py::test_sender_domain_regressions[a@-bad.com-] PASSED [ 29%]
+test_spam_scoring.py::test_sender_domain_regressions[a@bad-.com-] PASSED [ 30%]
+test_spam_scoring.py::test_sender_domain_regressions[a@bad_domain.com-] PASSED [ 31%]
+test_spam_scoring.py::test_sender_domain_regressions[a\x00@example.com-] PASSED [ 33%]
+test_spam_scoring.py::test_sender_domain_regressions[None-] PASSED       [ 34%]
+test_spam_scoring.py::test_sender_domain_regressions[42-] PASSED         [ 36%]
+test_spam_scoring.py::test_first_link_regressions[Visit https://example.com/deal now-https://example.com/deal] PASSED [ 37%]
+test_spam_scoring.py::test_first_link_regressions[https://example.com-https://example.com] PASSED [ 38%]
+test_spam_scoring.py::test_first_link_regressions[HTTPS://EXAMPLE.COM/path-HTTPS://EXAMPLE.COM/path] PASSED [ 40%]
+test_spam_scoring.py::test_first_link_regressions[one http://one.test/a two https://two.test/b-http://one.test/a] PASSED [ 41%]
+test_spam_scoring.py::test_first_link_regressions[Go https://example.com\nthen stop-https://example.com] PASSED [ 43%]
+test_spam_scoring.py::test_first_link_regressions[Go https://example.com\tthen stop-https://example.com] PASSED [ 44%]
+test_spam_scoring.py::test_first_link_regressions[Go https://example.com\u2003then stop-https://example.com] PASSED [ 45%]
+test_spam_scoring.py::test_first_link_regressions[See (https://example.com/a).-https://example.com/a] PASSED [ 47%]
+test_spam_scoring.py::test_first_link_regressions[See https://example.com/a(b).-https://example.com/a(b)] PASSED [ 48%]
+test_spam_scoring.py::test_first_link_regressions[<https://example.com/a>-https://example.com/a] PASSED [ 50%]
+test_spam_scoring.py::test_first_link_regressions["https://example.com/a"-https://example.com/a] PASSED [ 51%]
+test_spam_scoring.py::test_first_link_regressions[http://[::1]:8080/a-http://[::1]:8080/a] PASSED [ 52%]
+test_spam_scoring.py::test_first_link_regressions[bad http://[bad good https://example.com-https://example.com] PASSED [ 54%]
+test_spam_scoring.py::test_first_link_regressions[bad http://host:99999 good https://example.com-https://example.com] PASSED [ 55%]
+test_spam_scoring.py::test_first_link_regressions[-] PASSED              [ 56%]
+test_spam_scoring.py::test_first_link_regressions[no links here-] PASSED [ 58%]
+test_spam_scoring.py::test_first_link_regressions[http is not a URL-] PASSED [ 59%]
+test_spam_scoring.py::test_first_link_regressions[http://-] PASSED       [ 61%]
+test_spam_scoring.py::test_first_link_regressions[https:///path-] PASSED [ 62%]
+test_spam_scoring.py::test_first_link_regressions[ftp://example.com-] PASSED [ 63%]
+test_spam_scoring.py::test_first_link_regressions[httpx://example.com-] PASSED [ 65%]
+test_spam_scoring.py::test_first_link_regressions[http://host\x00-] PASSED [ 66%]
+test_spam_scoring.py::test_first_link_regressions[None-] PASSED          [ 68%]
+test_spam_scoring.py::test_first_link_regressions[http://x.test-] PASSED [ 69%]
+test_spam_scoring.py::test_shout_ratio_regressions[-0.0] PASSED          [ 70%]
+test_spam_scoring.py::test_shout_ratio_regressions[123!? -0.0] PASSED    [ 72%]
+test_spam_scoring.py::test_shout_ratio_regressions[\U0001f642-0.0] PASSED [ 73%]
+test_spam_scoring.py::test_shout_ratio_regressions[None-0.0] PASSED      [ 75%]
+test_spam_scoring.py::test_shout_ratio_regressions[42-0.0] PASSED        [ 76%]
+test_spam_scoring.py::test_shout_ratio_regressions[ABC-1.0] PASSED       [ 77%]
+test_spam_scoring.py::test_shout_ratio_regressions[abc-0.0] PASSED       [ 79%]
+test_spam_scoring.py::test_shout_ratio_regressions[AbC-0.6666666666666666] PASSED [ 80%]
+test_spam_scoring.py::test_shout_ratio_regressions[FREE prize NOW-0.5833333333333334] PASSED [ 81%]
+test_spam_scoring.py::test_shout_ratio_regressions[\xc4\xe4\u03a9\u03c9-0.5] PASSED [ 83%]
+test_spam_scoring.py::test_shout_ratio_regressions[\u4f60\u597d-0.0] PASSED [ 84%]
+test_spam_scoring.py::test_generated_valid_sender_domains PASSED         [ 86%]
+test_spam_scoring.py::test_missing_at_is_invalid PASSED                  [ 87%]
+test_spam_scoring.py::test_multiple_at_is_invalid PASSED                 [ 88%]
+test_spam_scoring.py::test_generated_links_end_at_all_whitespace PASSED  [ 90%]
+test_spam_scoring.py::test_first_of_two_links_is_returned PASSED         [ 91%]
+test_spam_scoring.py::test_shout_ratio_matches_reference PASSED          [ 93%]
+test_spam_scoring.py::test_nonletters_do_not_change_shout_ratio PASSED   [ 94%]
+test_spam_scoring.py::test_large_input[sender_domain] PASSED             [ 95%]
+test_spam_scoring.py::test_large_input[first_link] PASSED                [ 97%]
+test_spam_scoring.py::test_large_input[shout_ratio] PASSED               [ 98%]
+test_spam_scoring.py::test_many_unmatched_url_brackets PASSED            [100%]
+============================ Hypothesis Statistics =============================
+
+test_spam_scoring.py::test_sender_domain_no_crash:
+
+  - during generate phase (0.18 seconds):
+    - Typical runtimes: < 1ms, of which < 1ms in data generation
+    - 500 passing, 0 failing, and 25 invalid test cases
+    - Events:
+      * 1.14%, Retried draw from text(characters(codec='utf-8'), max_size=10).filter(not_yet_in_unique_list) to satisfy filter
+
+  - Stopped because settings.max_examples=500
+
+
+test_spam_scoring.py::test_first_link_no_crash:
+
+  - during generate phase (0.16 seconds):
+    - Typical runtimes: < 1ms, of which < 1ms in data generation
+    - 500 passing, 0 failing, and 27 invalid test cases
+
+  - Stopped because settings.max_examples=500
+
+
+test_spam_scoring.py::test_shout_ratio_no_crash:
+
+  - during generate phase (0.16 seconds):
+    - Typical runtimes: < 1ms, of which < 1ms in data generation
+    - 500 passing, 0 failing, and 26 invalid test cases
+
+  - Stopped because settings.max_examples=500
+
+
+test_spam_scoring.py::test_sender_domain_text_no_crash:
+
+  - during generate phase (0.10 seconds):
+    - Typical runtimes: < 1ms, of which < 1ms in data generation
+    - 500 passing, 0 failing, and 0 invalid test cases
+
+  - Stopped because settings.max_examples=500
+
+
+test_spam_scoring.py::test_first_link_text_no_crash:
+
+  - during generate phase (0.12 seconds):
+    - Typical runtimes: < 1ms, of which < 1ms in data generation
+    - 500 passing, 0 failing, and 0 invalid test cases
+
+  - Stopped because settings.max_examples=500
+
+
+test_spam_scoring.py::test_shout_ratio_text_no_crash:
+
+  - during generate phase (0.09 seconds):
+    - Typical runtimes: < 1ms, of which < 1ms in data generation
+    - 500 passing, 0 failing, and 0 invalid test cases
+
+  - Stopped because settings.max_examples=500
+
+
+test_spam_scoring.py::test_generated_valid_sender_domains:
+
+  - during generate phase (0.15 seconds):
+    - Typical runtimes: < 1ms, of which < 1ms in data generation
+    - 500 passing, 0 failing, and 0 invalid test cases
+
+  - Stopped because settings.max_examples=500
+
+
+test_spam_scoring.py::test_missing_at_is_invalid:
+
+  - during generate phase (0.10 seconds):
+    - Typical runtimes: < 1ms, of which < 1ms in data generation
+    - 500 passing, 0 failing, and 0 invalid test cases
+
+  - Stopped because settings.max_examples=500
+
+
+test_spam_scoring.py::test_multiple_at_is_invalid:
+
+  - during generate phase (0.15 seconds):
+    - Typical runtimes: < 1ms, of which < 1ms in data generation
+    - 500 passing, 0 failing, and 0 invalid test cases
+
+  - Stopped because settings.max_examples=500
+
+
+test_spam_scoring.py::test_generated_links_end_at_all_whitespace:
+
+  - during generate phase (0.16 seconds):
+    - Typical runtimes: < 1ms, of which < 1ms in data generation
+    - 500 passing, 0 failing, and 0 invalid test cases
+
+  - Stopped because settings.max_examples=500
+
+
+test_spam_scoring.py::test_first_of_two_links_is_returned:
+
+  - during generate phase (0.15 seconds):
+    - Typical runtimes: < 1ms, of which < 1ms in data generation
+    - 500 passing, 0 failing, and 0 invalid test cases
+
+  - Stopped because settings.max_examples=500
+
+
+test_spam_scoring.py::test_shout_ratio_matches_reference:
+
+  - during generate phase (0.14 seconds):
+    - Typical runtimes: < 1ms, of which < 1ms in data generation
+    - 500 passing, 0 failing, and 0 invalid test cases
+
+  - Stopped because settings.max_examples=500
+
+
+test_spam_scoring.py::test_nonletters_do_not_change_shout_ratio:
+
+  - during generate phase (0.14 seconds):
+    - Typical runtimes: < 1ms, of which < 1ms in data generation
+    - 500 passing, 0 failing, and 0 invalid test cases
+
+  - Stopped because settings.max_examples=500
+
+
+============================== 72 passed in 1.89s ==============================

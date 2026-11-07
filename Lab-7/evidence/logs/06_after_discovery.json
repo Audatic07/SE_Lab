@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/tmp/PES2UG24CS036_lab7_env/bin/python",
+    "-m",
+    "pytest",
+    "test_spam_scoring.py",
+    "-k",
+    "no_crash",
+    "-q",
+    "--tb=short",
+    "--color=no"
+  ],
+  "cwd": "/home/adityashrivastav/SE_Lab/Lab-7",
+  "stdin": null,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "timestamp_utc": "2026-11-07T19:53:56.843990+00:00"
+}

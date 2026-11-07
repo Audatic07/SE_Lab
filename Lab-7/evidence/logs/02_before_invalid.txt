@@ -1,0 +1,11 @@
+==== Running sender_domain ====
+Enter a sender email (e.g. offers@Deals.com): Traceback (most recent call last):
+  File "/home/adityashrivastav/SE_Lab/Lab-7/original/spam_scoring.py", line 33, in <module>
+    main()
+    ~~~~^^
+  File "/home/adityashrivastav/SE_Lab/Lab-7/original/spam_scoring.py", line 19, in main
+    result = sender_domain(user_input)
+  File "/home/adityashrivastav/SE_Lab/Lab-7/original/spam_scoring.py", line 2, in sender_domain
+    return email.split('@')[1].lower()
+           ~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range

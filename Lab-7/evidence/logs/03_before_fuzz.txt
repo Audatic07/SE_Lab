@@ -1,0 +1,49 @@
+FFF                                                                      [100%]
+=================================== FAILURES ===================================
+_________________________ test_sender_domain_no_crash __________________________
+test_discovery.py:14: in test_sender_domain_no_crash
+    @given(INPUTS)
+                   
+test_discovery.py:16: in test_sender_domain_no_crash
+    result = sender_domain(value)
+             ^^^^^^^^^^^^^^^^^^^^
+spam_scoring.py:2: in sender_domain
+    return email.split('@')[1].lower()
+           ^^^^^^^^^^^
+E   AttributeError: 'NoneType' object has no attribute 'split'
+E   Failing test case: test_sender_domain_no_crash(
+E       value=None,
+E   )
+___________________________ test_first_link_no_crash ___________________________
+test_discovery.py:22: in test_first_link_no_crash
+    @given(INPUTS)
+                   
+test_discovery.py:24: in test_first_link_no_crash
+    result = first_link(value)
+             ^^^^^^^^^^^^^^^^^
+spam_scoring.py:5: in first_link
+    start = text.index('http')
+            ^^^^^^^^^^
+E   AttributeError: 'NoneType' object has no attribute 'index'
+E   Failing test case: test_first_link_no_crash(
+E       value=None,
+E   )
+__________________________ test_shout_ratio_no_crash ___________________________
+test_discovery.py:30: in test_shout_ratio_no_crash
+    @given(INPUTS)
+                   
+test_discovery.py:32: in test_shout_ratio_no_crash
+    result = shout_ratio(value)
+             ^^^^^^^^^^^^^^^^^^
+spam_scoring.py:12: in shout_ratio
+    letters = [c for c in text if c.isalpha()]
+                          ^^^^
+E   TypeError: 'NoneType' object is not iterable
+E   Failing test case: test_shout_ratio_no_crash(
+E       value=None,
+E   )
+=========================== short test summary info ============================
+FAILED test_discovery.py::test_sender_domain_no_crash - AttributeError: 'None...
+FAILED test_discovery.py::test_first_link_no_crash - AttributeError: 'NoneTyp...
+FAILED test_discovery.py::test_shout_ratio_no_crash - TypeError: 'NoneType' o...
+3 failed, 3 deselected in 0.16s

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/tmp/PES2UG24CS036_lab7_env/bin/python",
+    "spam_scoring.py"
+  ],
+  "cwd": "/home/adityashrivastav/SE_Lab/Lab-7",
+  "stdin": "offers@Deals.com\nVisit https://example.com/deal now\nFREE prize NOW\n",
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "timestamp_utc": "2026-11-07T19:53:55.797673+00:00"
+}

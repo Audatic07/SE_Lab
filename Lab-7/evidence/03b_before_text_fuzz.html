@@ -1,0 +1,62 @@
+<!doctype html><meta charset="utf-8"><title>03b_before_text_fuzz</title>
+<style>
+body{margin:0;padding:26px;background:#fff;color:#17212b;font:18px/1.4 'DejaVu Sans',sans-serif}
+h1{font-size:24px;margin:0 0 8px}p{margin:4px 0;font-size:16px;overflow-wrap:anywhere}
+pre{font:18px/1.3 'DejaVu Sans Mono',monospace;white-space:pre-wrap;overflow-wrap:anywhere;
+margin:20px 0 0;padding:18px;border:1px solid #cbd2da;background:#f7f9fb}
+</style><h1>Lab 7 - Captured command output</h1>
+<p>SRN: PES2UG24CS036 | 03b_before_text_fuzz | Exit code: 1</p>
+<p>Command: python -m pytest test_discovery.py -q -k text_no_crash --tb=short --color=no</p>
+<p>Working directory: /home/adityashrivastav/SE_Lab/Lab-7/original</p>
+
+<p>Complete stdout and stderr from the recorded subprocess, displayed verbatim below.</p>
+<pre>FFF                                                                      [100%]
+=================================== FAILURES ===================================
+_______________________ test_sender_domain_text_no_crash _______________________
+test_discovery.py:38: in test_sender_domain_text_no_crash
+    @given(st.text())
+                   ^^^
+test_discovery.py:40: in test_sender_domain_text_no_crash
+    assert isinstance(sender_domain(value), str)
+                      ^^^^^^^^^^^^^^^^^^^^
+spam_scoring.py:2: in sender_domain
+    return email.split('@')[1].lower()
+           ^^^^^^^^^^^^^^^^^^^
+E   IndexError: list index out of range
+E   Failing test case: test_sender_domain_text_no_crash(
+E       value='',
+E   )
+________________________ test_first_link_text_no_crash _________________________
+test_discovery.py:44: in test_first_link_text_no_crash
+    @given(st.text())
+                   ^^^
+test_discovery.py:46: in test_first_link_text_no_crash
+    assert isinstance(first_link(value), str)
+                      ^^^^^^^^^^^^^^^^^
+spam_scoring.py:5: in first_link
+    start = text.index('http')
+            ^^^^^^^^^^^^^^^^^^
+E   ValueError: substring not found
+E   Failing test case: test_first_link_text_no_crash(
+E       value='',  # or any other generated value
+E   )
+________________________ test_shout_ratio_text_no_crash ________________________
+test_discovery.py:50: in test_shout_ratio_text_no_crash
+    @given(st.text())
+                   ^^^
+test_discovery.py:52: in test_shout_ratio_text_no_crash
+    assert 0.0 &lt;= shout_ratio(value) &lt;= 1.0
+                  ^^^^^^^^^^^^^^^^^^
+spam_scoring.py:14: in shout_ratio
+    return len(upper) / len(letters)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+E   ZeroDivisionError: division by zero
+E   Failing test case: test_shout_ratio_text_no_crash(
+E       value='',
+E   )
+=========================== short test summary info ============================
+FAILED test_discovery.py::test_sender_domain_text_no_crash - IndexError: list...
+FAILED test_discovery.py::test_first_link_text_no_crash - ValueError: substri...
+FAILED test_discovery.py::test_shout_ratio_text_no_crash - ZeroDivisionError:...
+3 failed, 3 deselected in 0.17s
+</pre>

@@ -1,0 +1,49 @@
+FFF                                                                      [100%]
+=================================== FAILURES ===================================
+_______________________ test_sender_domain_text_no_crash _______________________
+test_discovery.py:38: in test_sender_domain_text_no_crash
+    @given(st.text())
+                   ^^^
+test_discovery.py:40: in test_sender_domain_text_no_crash
+    assert isinstance(sender_domain(value), str)
+                      ^^^^^^^^^^^^^^^^^^^^
+spam_scoring.py:2: in sender_domain
+    return email.split('@')[1].lower()
+           ^^^^^^^^^^^^^^^^^^^
+E   IndexError: list index out of range
+E   Failing test case: test_sender_domain_text_no_crash(
+E       value='',
+E   )
+________________________ test_first_link_text_no_crash _________________________
+test_discovery.py:44: in test_first_link_text_no_crash
+    @given(st.text())
+                   ^^^
+test_discovery.py:46: in test_first_link_text_no_crash
+    assert isinstance(first_link(value), str)
+                      ^^^^^^^^^^^^^^^^^
+spam_scoring.py:5: in first_link
+    start = text.index('http')
+            ^^^^^^^^^^^^^^^^^^
+E   ValueError: substring not found
+E   Failing test case: test_first_link_text_no_crash(
+E       value='',  # or any other generated value
+E   )
+________________________ test_shout_ratio_text_no_crash ________________________
+test_discovery.py:50: in test_shout_ratio_text_no_crash
+    @given(st.text())
+                   ^^^
+test_discovery.py:52: in test_shout_ratio_text_no_crash
+    assert 0.0 <= shout_ratio(value) <= 1.0
+                  ^^^^^^^^^^^^^^^^^^
+spam_scoring.py:14: in shout_ratio
+    return len(upper) / len(letters)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+E   ZeroDivisionError: division by zero
+E   Failing test case: test_shout_ratio_text_no_crash(
+E       value='',
+E   )
+=========================== short test summary info ============================
+FAILED test_discovery.py::test_sender_domain_text_no_crash - IndexError: list...
+FAILED test_discovery.py::test_first_link_text_no_crash - ValueError: substri...
+FAILED test_discovery.py::test_shout_ratio_text_no_crash - ZeroDivisionError:...
+3 failed, 3 deselected in 0.17s

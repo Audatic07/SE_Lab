@@ -1,0 +1,8 @@
+==== Running sender_domain ====
+Enter a sender email (e.g. offers@Deals.com): Sender Domain: 
+
+==== Running first_link ====
+Enter a message containing a link: First Link: 
+
+==== Running shout_ratio ====
+Enter a message (e.g. FREE prize NOW): Uppercase Ratio: 0.0
