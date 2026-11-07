@@ -113,7 +113,7 @@ node tools/capture_evidence.cjs /absolute/path/to/chrome
 ```
 
 To rebuild the PDF, install ReportLab and Pillow, then run `python tools/build_report.py`.
-That script embeds Liberation Sans/Mono fonts from `/usr/share/fonts`; adjust those paths
+That script embeds Liberation Serif/Mono fonts from `/usr/share/fonts`; adjust those paths
 when rebuilding on another operating system. These tools are not needed to run the app or tests.
 
 Reference: [Hypothesis strategies](https://hypothesis.readthedocs.io/en/latest/reference/strategies.html)
